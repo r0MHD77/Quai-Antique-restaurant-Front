@@ -11,7 +11,7 @@ main{
 }
 
 footer.footer{
-    padding: 15px;
+    padding: 13px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -24,6 +24,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position:absolute;
@@ -77,4 +78,8 @@ p{
         opacity: 0;
         transition: all 0.3s ;
     }
+}
+
+.form-label{
+    color: $primary;
 }
