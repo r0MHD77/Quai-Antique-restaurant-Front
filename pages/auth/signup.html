@@ -8,25 +8,43 @@
         <div class="mb-3">
             <label for="NomInput" class="form-label">Nom</label>
             <input type="text" class="form-control" id="NomInput" placeholder="Votre nom">
+            <div class="invalid-feedback">
+                Le nom est requis❌ 
+            </div>
         </div>
         <div class="mb-3">
             <label for="PrenomInput" class="form-label">Prénom</label>
             <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom">
+            <div class="invalid-feedback">
+                Le prénom est requis❌ 
+            </div>
         </div>
         <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
             <input type="email" class="form-control" id="EmailInput" placeholder="test@email.fr">
+            <div class="invalid-feedback">
+                Votre mail n'est pas au bon format❌ 
+            </div>
+            <div class="valid-feedback">
+                Votre mail est au bon format👍
+            </div>
         </div>
         <div class="mb-3">
             <label for="PasswordInput" class="form-label">Mot de passe</label>
             <input type="password" class="form-control" id="PasswordInput">
+            <div class="invalid-feedback">
+                Le mot de  passe n'est pas  assez robuste : Au moins 8 caractères, au moins 1 lettre Majuscule, au moins 1 lettre Minuscule, au moins 1 chiffre, et 1 caractères spécial❌   
+            </div>
+            <div class="valid-feedback">
+                Votre mot de  passe est robuste👍
+            </div>
         </div>
         <div class="mb-3">
             <label for="ValidatedPasswordInput" class="form-label">Validez votre Mot de passe</label>
             <input type="password" class="form-control" id="ValidatedPasswordInput">
         </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Inscripion</button>
+            <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscripion</button>
         </div>
     </form>
     <div class="text-center pt-3">
