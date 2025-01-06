@@ -7,3 +7,4 @@ export default class Route {
       this.authorize = authorize;
     }
 }
+
