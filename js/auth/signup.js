@@ -111,8 +111,8 @@ function InscrireUtilisateur(){
     };
 
     fetch(apiUrl+"http://127.0.0.1:8000/api/registration", requestOptions)
-    .then(response=> {
-        if(response.ok){ 
+    .then(response => {
+        if (response.ok) { 
             return response.json();
         }    
         else{
@@ -120,7 +120,7 @@ function InscrireUtilisateur(){
         }
     })
     .then(result => {
-        alert("bravo!"+dataForm.get("prénom")+ ",vous etes maintenant inscrit, vous pouvez vous connnectez");
+        alert("bravo! "+dataForm.get("prénom")+ ",vous etes maintenant inscrit, vous pouvez vous connnectez");
         document.location.href="/signin";
     })     
     
